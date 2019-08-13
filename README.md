@@ -1,6 +1,6 @@
 # LoggerExercise
 
-# #Code Review / Refactoring exercise
+## Code Review / Refactoring exercise
 Please review the following code snippet. Assume that all referenced assemblies have
 been properly included.
 The code is used to log different messages throughout an application. We want the ability
@@ -32,9 +32,9 @@ Existen muchos tipos y valores de configuración dentro del código: Es recomend
 Falta JavaDoc y comentarios en general.
 
 ### 2.
-Se refactorizó el código subdividiendo metodos y clases.
-Se aplicó el patrón Factory y Singleton.
-Se convirtió a proyecto Maven.
-Se agregaron Java Docs
-Se eliminaron variables que no se usaban y se siguio convenciones con respecto a nombres de metodos y variables
-Se separó logica de configuración
+-Se refactorizó el código subdividiendo metodos y clases.
+-Se aplicó el patrón Factory y Singleton.
+-Se convirtió a proyecto Maven.
+-Se agregaron Java Docs
+-Se eliminaron variables que no se usaban y se siguio convenciones con respecto a nombres de metodos y variables
+-Se separó logica de configuración
