@@ -4,6 +4,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.belatrix.exam.exceptions.FileHandlerException;
 import com.belatrix.exam.factory.FileHandlerFactory;
 import com.belatrix.exam.loggers.LoggerApp;
 
@@ -12,7 +13,7 @@ public class FileLoggerApp implements LoggerApp {
 	public static final Logger logger = Logger.getLogger("FileLoggerApp");
 	public FileHandler fileHandler;
 	
-	public FileLoggerApp() {
+	public FileLoggerApp() throws FileHandlerException {
 		fileHandler = FileHandlerFactory.getFileHandler();
 		logger.addHandler(fileHandler);
 	}

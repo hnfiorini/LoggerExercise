@@ -1,6 +1,6 @@
 package com.belatrix.exam.exceptions;
 
-public class FileHandlerException extends RuntimeException {
+public class FileHandlerException extends Exception {
 
 	/**
 	 * 
@@ -9,8 +9,5 @@ public class FileHandlerException extends RuntimeException {
 	
 	public FileHandlerException(String message, Throwable cause) {
         super(message, cause);
-    }
-	
-	
-
+    }	
 }

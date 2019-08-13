@@ -16,7 +16,8 @@ public class FileHandlerFactory {
 		super();
 	}
 	
-	public static FileHandler getFileHandler() {
+	public static FileHandler getFileHandler() throws FileHandlerException {
+		config = AppConfiguration.getInstance();
 		if (fileHandler == null) {
 			try {
 				fileHandler = new FileHandler(config.getProperty("logger.logFileFolder") + "/logFile.txt");

@@ -6,9 +6,20 @@ import com.belatrix.exam.loggers.impl.ConsoleLoggerApp;
 import com.belatrix.exam.loggers.impl.DBLoggerApp;
 import com.belatrix.exam.loggers.impl.FileLoggerApp;
 
+/**
+ * @author Horacio Nicolas Fiorini
+ *
+ */
 public class LoggerFactory {
-	
-	public static LoggerApp getLogger(LoggerType loggerType) {
+
+	/**
+	 * @param loggerType, it could be CONSOLE, FILE, DB
+	 * @return an implementation of interface LoggerApp. It can be ConsoleLoggerApp, DBLoggerApp or FileLoggerApp
+	 * @throws Exception
+	 */
+	public static LoggerApp getLogger(LoggerType loggerType) throws Exception {
+		
+			
 		if (loggerType.equals(LoggerType.CONSOLE)) {
 			return new ConsoleLoggerApp();
 		}
@@ -18,5 +29,4 @@ public class LoggerFactory {
 			return new DBLoggerApp();
 		}
 	}
-
 }
