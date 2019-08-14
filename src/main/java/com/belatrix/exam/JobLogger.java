@@ -13,6 +13,11 @@ import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @author Horacio Nicolas Fiorini
+ * This is the original class
+ *
+ */
 public class JobLogger {
 	
 	private static boolean logToFile;
