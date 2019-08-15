@@ -16,6 +16,9 @@ public class DBHandlerFactory {
 		super();
 	}
 	
+	/**
+	 * @return Always the same connection.
+	 */
 	public static Connection getConnection()  {
 		configuration = AppConfiguration.getInstance();
 		if (connection == null) {
