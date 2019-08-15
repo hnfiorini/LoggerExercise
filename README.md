@@ -23,7 +23,9 @@ La interface del metodo LogMessage es confusa con tantos parametros booleanos y 
 
 Si bien es una convencion y no algo obligatorio, los nombres de los metodos comienzan con minuscula, salvo los constructores (tienen el mismo nombre que las clases, comienzan con mayuscula)
 
-La variable "initialized" no se usa.
+La variable "initialized" y "l" no se usan.
+
+Muchos "if" confusos.
 
 Es recomendable que en la variable dbParams usemos Generics, es decir, pasarle a la clase Map por parametro el tipo de sus elementos contenidos. Asi evitaremos errores en runtime y nos advertira algun error durante la compilacion.
 
