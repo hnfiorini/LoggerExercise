@@ -19,7 +19,6 @@ public class LoggerFactory {
 	 */
 	public static LoggerApp getLogger(LoggerType loggerType) throws Exception {
 		
-			
 		if (loggerType.equals(LoggerType.CONSOLE)) {
 			return new ConsoleLoggerApp();
 		}

@@ -6,7 +6,7 @@ import java.util.logging.LogManager;
 
 /**
  * @author Horacio Nicolas Fiorini
- *
+ * Represents an instance of loggin.properties file
  */
 public class AppConfiguration {
 
@@ -33,6 +33,10 @@ public class AppConfiguration {
 		return instance;
 	}
 	
+	/**
+	 * @param property a property of loggin.properties file
+	 * @return the value of the input property in loggin.properties file
+	 */
 	public String getProperty(String property) {
 		return localLogManager.getProperty(property);
 	}
